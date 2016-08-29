@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {{post.render() | safe}}
+  <form method="post">
+	<div class="form-group">
+		<label for="comment">Comment:</label>
+		<textarea name="comment" class="form-control" cols="5" rows="3"></textarea>
+	</div>
+
+	<input type="submit" class="btn btn-success">
+ </form>
+{% endblock %}
